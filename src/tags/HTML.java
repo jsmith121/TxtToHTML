@@ -1,3 +1,5 @@
+package tags;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -9,11 +11,11 @@ public class HTML extends Tag {
         this.fin = fin;
     }
 
-    public void generateHead() throws IOException {
+    private void generateHead() throws IOException {
         Head head = new Head(fout);
         head.print();
     }
-    public void generateBody() throws IOException {
+    private void generateBody() throws IOException {
         Body body = new Body(fin, fout);
         body.print();
     }

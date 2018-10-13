@@ -1,10 +1,12 @@
+package tags;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 
 public class Paragraph extends Tag {
 
-    String content;
-    public Paragraph(String content, BufferedWriter fout){
+    private String content;
+    Paragraph(String content, BufferedWriter fout){
         this.content = content;
         this.fout = fout;
     }

@@ -1,10 +1,12 @@
+package tags;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Body extends Tag {
 
-    public Body(Scanner fin, BufferedWriter fout){
+    Body(Scanner fin, BufferedWriter fout){
         this.fout = fout;
         this.fin = fin;
     }
